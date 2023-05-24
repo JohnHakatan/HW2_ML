@@ -1,3 +1,9 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.preprocessing import StandardScaler
 def visualize_clf(clf, X, Y, title, 
                   xlabel, ylabel,
                   marker_size=50,
