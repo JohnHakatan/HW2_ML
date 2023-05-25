@@ -47,7 +47,7 @@ class dataset_preparation:
         change_symptoms()
     # dropping unhelpful features:
     def drop_features(self):
-        self.dataset.drop(['patient_id', 'pcr_date'], axis=1, inplace=True) # NOT DROPPING SEX
+        self.dataset.drop(['sex', 'patient_id', 'pcr_date'], axis=1, inplace=True)
 
     def normalization(self):
         def stdNormal(feature):
